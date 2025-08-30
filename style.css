@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6200ea, #3700b3);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1,
+h2 {
+  color: #6200ea;
+  margin-bottom: 15px;
+}
+
+#product-list,
+#cart-items {
+  display: grid;
+  gap: 15px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(98, 0, 234, 0.2);
+}
+
+.product button {
+  background-color: #6200ea;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.product button:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+#cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+  border-top: 2px solid #ddd;
+}
+
+#checkout-btn {
+  background-color: #6200ea;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#checkout-btn:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+#empty-cart {
+  color: #666;
+  font-style: italic;
+}
+
+.remove-btn {
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
